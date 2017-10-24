@@ -21,3 +21,6 @@ class TestAppAnnie(unittest.TestCase):
         api = AppAnnieApi(self.badKey)
         with self.assertRaises(ValueError) as context :
             api.accounts()
+
+if __name__ == '__main__':
+    unittest.main()
